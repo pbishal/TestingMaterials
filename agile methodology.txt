@@ -1,0 +1,44 @@
+agile methodology
+
+product backlog and sprint backlog 
+
+produtbacklog is maintained by project managers 
+
+it consists of feeatures of application 
+
+what to develop -- priory 
+
+sprint backlog-- header action features aand fcu
+
+
+4 sp
+sprint 
+
+
+iterative and incremental model and requirement changes are allowed at anychanges 
+
+scrum is framework which principles of agile methodology and it consists of below mentioned sprint calls 
+
+scrum team
+
+scrum master 
+
+developers
+
+testers 
+
+prodouct manager 
+
+foe every sprint piece of software is delivered to the customer 
+
+sprint planning call: this is first call in 
+
+sprint backlog grooming call
+
+sprint retrospectiver call:changing at last of sprint 
+
+sprint review:
+
+daily stand up call(15 minutes calls )
+
+jira, agile tool project management tool defect management tool 

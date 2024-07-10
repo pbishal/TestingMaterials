@@ -1,0 +1,253 @@
+81.Can we iterator the list using normal for loop?
+Yes,we can iterate the list using both normal and enhanced for loop.
+
+82.What are the methods available in list But not in set?
+indexOf();
+get();
+lastIndexOf();
+
+83.Explain about user defined Map?
+It is key and value pair.
+Here key+value is one entry.
+Key ignore the duplicate value and value allow the duplicates.
+
+84.How much null allows in below maps:
+HashMap :k?,v?
+LinkedHashMap:k?,v?
+TreeMap :k?,v?
+HashTable :k?,v?
+HashMap :k-1 null,v- n null
+LinkedHashMap:k-1 null,v- n null
+TreeMap :k-ignore null,v- allow null
+HashTable :k-ignore null,v- ignore null
+
+85.How to Iterate Map?
+We can iterate the map by using entrySet() method.
+
+86.What is the return type of entrySet?
+Set<Entry<key,value>>
+87.Write the methods to get the key only and value only?
+For key only keySet() method is used.
+For value only values() method is used.
+88.What is mean by File? In which package it is available?
+File is a class and it is used to achieve the file operation.
+It is available in java.io package.
+89.What are the methods available in File ?
+mkdir();
+mkdirs();
+list();
+createNewFile();
+isDirectory();
+isFile();
+isHidden();
+90.While creating a file if we not mention the format then under which format it will save the file?
+If we do not mention the file format it will automatically take format as file.
+91.What are the difference between append and updating the file?
+
+For updating the file:
+---------------------
+
+It will replace the old contents of the file.
+
+For appending the file:
+-----------------------
+
+It will add the contents at the end of the file.
+
+92.What is mean by Enumerator,Iteratorand List Iterator? 
+
+Enumeration:
+--------------
+
+It is an interface used to iterate only legacy class or interface.
+Only iterates in forward direction
+Iterator:
+---------
+
+It is an interface used to iterate the collection objects
+Only iterates in forward direction
+List Iterator:
+--------------
+
+It is an interface used for iterating list type classes
+iterates in forward as well as backward direction
+93.Difference between Enumurator,Iterator and List Iterator?
+
+Enumerator:
+------------
+
+applicable only for legacy class and interface
+no remove method is available.
+no Backward direction is possible
+
+Iterator:
+----------
+
+It is an Interface used to iterate the collection objects
+remove method is available.
+no Backward direction is possible.
+ListIterator:
+--------------
+
+It is an interface used for iterating list type classes
+remove method is available.
+Backward direction is possible.
+94.What are the methods available in Enumerator,Iteratorand List Iterator? 
+
+Enumerator Methods:
+------------------
+
+hasMoreElements();
+nextElement();
+
+Iterator Methods:
+----------------
+
+hasNext(); 
+next();
+remove();
+
+ListIterator Methods:
+---------------------
+
+hasNext(); 
+next();
+remove();
+hasPrevious();
+previous();
+
+95.Explain JDBC connection steps?
+Import JDBC packages.
+Load and register the JDBC driver.
+Open a connection to the database.
+Create a statement object to perform a query.
+Execute the statement object and return a query resultset.
+Process the resultset.
+Close the resultset and statement objects.
+Close the connection.
+
+
+
+96.What are control statement?
+Statement which has control over the loop or program is called control statements.
+Example:if,if else,for,while,dowhile etc
+
+
+97.Different control statements available in java
+
+Break:
+------
+
+It is used to terminate the loop
+
+Continue:
+----------
+
+It is used to skip the current iteration.
+while and do while
+
+----------
+While:
+------
+
+It is entry check loop.
+Do While:
+---------
+
+It is a exit check loop.
+if and if else
+===============
+
+
+if
+--
+
+executes only when the condition becomes true.
+
+if else
+--------
+
+executes the else part when the condition becomes false and executes if part when condition becomes true.
+
+98.Difference between immutable and mutable string
+immutable and mutable string
+==============================
+
+
+Immutable string:
+-----------------
+
+Once created,we cant change the value in memory
+In concatenation, it will create new memory
+mutable string:
+----------------
+
+After creation,we can modify the value in reference(memory)
+In concetanation, its takes same memory
+
+99.Difference between Remove all() and Retain all
+Remove all() and Retain all
+============================
+
+
+removeAll():
+------------
+
+removeAll() is a method , it is used to compare the 2 lists and remove all the common values
+retainAll():
+------------
+
+retainAll() is a method, it is used to compare both lists and retains only the common values
+
+
+100.Difference between Literal String and Non literal string
+Literal String and Non literal string
+======================================
+
+
+Literal String:
+---------------
+
+In case of String duplicates,it will share the same memory address
+Its stored inside the heap memory(string pool or string constant).
+It share the memory if same value (duplicate value)
+Non literal string:
+--------------------
+
+Even incase of String duplicates,it will have different memory address.
+It’s stored in the heap memory.
+Its create a new memory every time even if it is a duplicate value(same value)
+
+101.Difference between Heap and stack memory
+Heap and stack memory
+=================
+
+
+Heap memory:
+------------
+
+Heap is used for dynamic memory allocation. 
+Memory access is slow.
+
+Static memory:
+--------------
+
+Stack is used for static memory allocation.
+Variables allocated on the stack are stored directly to the memory and access will be very fast.
+
+102.What is the default Package in java?
+java.lang
+
+103.What are the difference between equals() & hashcode()?
+
+equals:
+-------
+
+Used to compare the two string.
+Hashcode:
+----------
+
+Used to return the address where it stored.
+
+104.How can we make Array list As a synchronized?
+collections.SynchronisedList(refName of array);

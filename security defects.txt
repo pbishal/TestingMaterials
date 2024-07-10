@@ -1,0 +1,24 @@
+Certainly! Here are concise points on various examples of security defects:
+
+1. **SQL Injection**
+   - Attackers inject malicious SQL code via input fields, manipulating or accessing data unauthorizedly.
+
+2. **Cross-Site Scripting (XSS)**
+   - Malicious scripts are injected into web pages, potentially hijacking user sessions or redirecting users to malicious sites.
+
+3. **Cross-Site Request Forgery (CSRF)**
+   - Users are tricked into performing actions they didn't intend, such as changing settings or transferring funds, without their knowledge.
+
+4. **Buffer Overflow**
+   - Data exceeds the allocated buffer memory, leading to arbitrary code execution or system crashes.
+
+5. **Insecure Cryptographic Storage**
+   - Sensitive data is stored inadequately without proper encryption, making it vulnerable to theft.
+
+6. **Insecure Direct Object References (IDOR)**
+   - Attackers access objects directly by modifying a parameter value, exploiting insufficient authorization checks.
+
+7. **Broken Authentication**
+   - Flaws in authentication mechanisms allow attackers to assume other users' identities or compromise authentication tokens.
+
+These points highlight critical areas where security can be breached due to software defects.

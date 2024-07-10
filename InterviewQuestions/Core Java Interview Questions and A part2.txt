@@ -1,0 +1,370 @@
+31.What is mean by string?
+Collection of characters or words enclosed within double quotes is called as String.
+
+String is a class in java
+String is index based
+Example : "greenstechnology".
+
+32.What are the method available in string?
+equals();
+equalsignorecase();
+contains();
+split();
+toUpperCase();
+toLowerCase();
+subString();
+isEmpty();
+identifyHashCode();
+startsWith();
+endsWith();
+CompareTo();
+charAt();
+indexOf();
+ lastIndexOf();
+replace();
+ 
+33.What is mean by constructor?
+Constructor is a special method which is called by default when object is created for that particular class.(implicit call)
+Class name and constructor name must be same.
+It doesn't have any return type.
+It supports method overloading but won't support method overriding.
+purpose of constructor:It is used to initialise the values to variables.
+
+34.Explain the types of constructor?
+Parameterized constructor
+Non parameterized constructor
+
+35.Do constructors have any return type?
+No,constructor can't have any return type.
+
+36.Write a syntax for creating constructor?
+
+Access specifier classname(){
+
+}
+
+37.What are the rules for defining a constructor?
+Class name and constructor name must be same.
+It should not have any return type.
+
+38.Why a return type is not allowed for constructor?
+constructor is not directly called by your code, its called by memory allocation and object initialisation in the run time.
+Its return value is opaque to the user so we cant mention it.
+
+39.Can we declare constructor as 'private'?
+Yes,we can declare constructor as private.
+
+40.Why a compiler given constructor is called as default constructor?
+If we didnt create a constructor explictly it will take the default constructor.
+
+41.What is constructor chaining and how can it be achieved in Java?
+The process of calling one constructor from another constructor with respect to current object is called constructor chaining.
+By using this() and super() methods we can achieve constructor chaining.
+
+42.What are the difference between this() and super()?
+this() is used to call class level constructor.
+super() is used to call the parent class constructor.
+
+43.What is the super class of all java?
+Object is the super class of all classes in java.
+
+44.What are the types of variable?
+ Local level variable.
+Global/Class level variable.
+  Static variable.
+Final variable
+
+45.What is meant by local variable,instance variable,class/static variable?
+Static Variable-It is shared by all the objects in the class. 
+Local Variable-A variable declared inside a method/block.Level of access:only inside the block
+Class variable-A variable declared outside all methods but inside class. Level of access is only with in object
+
+46.What is mean by static keyword in java?
+The static keyword is mainly used for memory management.
+It is used to share the same variable or method by objects of given class.
+
+47.Can we override static method in java?
+No,we can't override the static method because it is part of a class rather than an object.
+
+48.Can we overload static method in java?
+Yes, we can overload the static method in java.
+
+49.What is mean by static variable?
+When a variable is declared as static,then a single copy of variable is created and shared among all object at class level.
+Static variable are essentially global variable.
+All the instance of the class share the same static variable.
+
+50.What is mean by static method?
+When a method is declared as static,we need not create object to call the paticular method.We can call as Classname.methodname()
+Static method in java belong to the class(not to an object).
+They use no instance variables and will usually take the input from the parameters and perform action on it,then return some result.
+
+51.What is mean by final keyword and what's happend when we declare final as in class,method,variable?
+Final is a non access modifier applicable to a variable, method or a class.
+When a variable is declared with final keyword,its value can't be modified.
+When a method is declared as final we can prevent method overriding.
+When a class is declared as final we can prevent inheritance.
+
+52.What is difference between final and finally keyword?
+
+Final:
+-----
+
+Final varaible can't be modified.
+Final method can't be overrided.
+Final class can't be inherited.
+
+Finally:
+--------
+
+ Code given inside finally block will always get executed whether exception occurs or not.
+
+53.Where local,static and class variables stores in jvm?
+Static variables are stored in the permGen section of heap memory.
+Local variables are stored in stack.
+Class variables are stored in heap memory.
+
+54.What is Exception?
+Exception is an unexpected event which when occurs in a program,your program will terminate abnormally.
+We can avoid this abnormal termination using exception handling mechanisms(try,catch,finally,throw,throws)
+
+55.Explain about types of Expection?
+Unchecked exception(Run time exception)
+Checked exception(Compile time exception)
+
+56.What are the difference between checked expection and unchecked expection?
+
+Unchecked exception:
+-------------------------
+
+It will occur at the Run time.
+Checked exception:
+----------------------
+
+Checked exception will occur at the Compile time.
+
+57.What is the super class for Exception and Error?
+Throwable
+Exception
+
+58.Can we have try block without catch block?
+Yes we can have try block without catch block.But in that case finally block must be present.(There will be no syntax error)
+Possible but we will not able to handle the exception without catch block.
+59.Can we write multiple catch blocks under single try block?
+Yes,we write multiple catch blocks under single try block.
+60.How to write user defined exception or custom exception in java?
+First customised exception must come under Exception class.
+
+access_specifier method_name() throws customException {
+throw new customException();
+}
+
+61.What are the different ways to print exception message on console?
+ref.printStackTrace() method is used to print the exception message in the console.
+62.What are the differences between final finally and finalize in java?
+
+Final:
+-----
+
+A final class variable whose value cannot be changed.
+A final method is declared in class level, they cannot be inherited.
+A class declared as final can't be inherited.
+Finally:
+--------
+
+It’s a block of statement that definitely executes after the try catch block.
+Exception occurs or not,finally block always get executed.
+Finalize:
+---------
+
+It will clean up unused memory space.
+63.What are the differences between throw and throws?
+
+Throw:
+------
+
+Throw is a keyword, using which we can throw any any exception.This keyword always given inside the method.
+At a time we can throw only one exception using throw keyword.
+
+Throws:
+---------
+
+Throws is a keyword, it is used to handle the exception(given in method level).
+we can handle more than one exception using throws keyword.
+64.Explain Java Exception Hierarchy?
+
+Exception
+
+Unchecked exception(Run time exception)	Checked exception(Compile time exception)
+ArithmeticException	IOException
+NullPointerException	SQLException
+InputMismatchException	FileNotFoundException
+ArrayIndexOutOfBoundExcepion	ClassNotFoundException
+StringIndexOutOfBoundExcepion
+IndexOutOfBoundExcepion	 
+NumberFormatException	 
+65.What is mean by throw and throws?
+Throw is a keyword,used to explicitly throw an exception
+Throws is a keyword, it is used to handle the exceptions(in method level).
+
+66.What is mean by array?
+Storing multiple values of similar datatype in a single variable.
+It is index based one.
+
+67.What are the advantages and disadvantages of array?
+
+Advantage:
+-------------
+
+In a single variable we can store multiple values.
+Disadvantages:
+----------------
+
+It support only similar data types.
+Size fixed at compile time.
+Memory wastage is high.
+
+68.Different ways to intialise array?
+Datatype refName[]= new Datatype[size];
+Datatype[] refname={ value1,value2,....};
+
+69.Can we change the memory size of array after intialization?
+No,we can't change the memory size of array after intialization.
+
+70.What is collection ?
+It will support storage of multiple values with dissimilar data types.
+It is dynamic memory allocation.
+No memory wastage like array.
+
+71.What is the difference between ArrayList and Vector?
+
+ArrayList:
+----------
+
+Asynchronized
+It is not a thread safe
+
+Vector:
+-------
+
+Synchronized
+Thread safe
+
+72.What is the difference between ArrayList and LinkedList?
+
+LinkedList:
+-----------
+
+Insertion and deletion is a best one.
+Searching/retrieving is a worst.
+It’s makes performance issue.
+ArrayList:
+----------
+
+In Arraylist retrieve/searching is a best one
+In ArrayList deletion and insertion is a worst one because if we delete/insert one index value after all the index move to forward/backward.
+It makes performance issue.
+
+73.Difference between Collection and Collections
+Collection-Collection is an interface under which we have list,set,queue
+Collections-is an utility class in which we have lots of predefined methods which we can apply over collection objects.
+Eg:Collections.min(),Collections.max(),Collections.sort()
+
+74.Describe the Collections type hierarchy ? What are the main interfaces ?
+
+Collection:
+------------
+
+List
+Set
+Map----doesnt come under collection,it is a separate interface in java
+
+Hierarchy:
+-----------
+
+
+List:
+----
+
+ArrayList
+LinkedList
+Vector
+
+Set:
+----
+
+Hashset
+LinkedHashSet
+Treeset
+
+Map:
+----
+
+HashMap
+LinkedHashMap
+Hashtable
+TreeMap
+ConcurrentHahMap
+
+75.What is difference between set and List?
+Set:
+----
+
+It is a value based one.
+It prints in random order.
+It won't allow duplicates.
+
+List:
+-----
+
+It is a Index based one.
+It prints in insertion order.
+It allow duplicates.
+
+76.What is the difference between HashSet and TreeSet ? 
+
+HashSet:
+---------
+
+It prints in random order.
+TreeSet:
+---------
+
+Treeset prints in ascending order
+
+77.How to convert List into Set?
+By addAll() we can convert List into set.(all the elements in list will get added to set)
+
+78.What is map?
+It is key and value pair.
+Here key+value is one entry.
+Key ignore the duplicate value and value allow the duplicates.
+79.What is difference between Hash Map and Hash Table?
+
+HashMap:
+----------
+
+Key allows single null.
+Asynchronised(not thread safe).
+
+Hashtable:
+----------
+
+Key and value won't allow null.
+Synchronised(thread safe).
+80.What is difference between set and Map?
+
+Set:
+---- 
+
+It is a value based one.
+It print in random order.
+It won't allow duplicates.
+
+Map:
+----
+
+It is key and value pair.
+Here key+value is one entry.
+Key ignore the duplicate value and value allow the duplicates.
+

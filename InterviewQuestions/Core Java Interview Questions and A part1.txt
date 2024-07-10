@@ -1,0 +1,234 @@
+Core Java Interview Questions and Answers
+
+1.What is java?
+Java is a simple and most widely used programing language.
+Java is fast,reliable and secure
+
+2.Why are we go for java?
+Freeware and opensource
+It is platform independent i.e program written in one operating system is capable of running in all other operating systems due to bytecode concept.
+It runs multiple application at a time.
+
+3.What are the main features of java?
+
+*Java has more features,
+1. Platform independent
+2. Open source
+3. Multithreading
+4. More secure
+5. Portable
+
+4.What is platform independent?
+During the compilation the java program is converted into byte code(not machine specific).
+Bytecode can be runned by jvm of any platform.
+So code developed in one platform is capable of running in all other platform.
+
+5.What is mean by Open Source?
+A program in which source code is available to the general public for use and/or modification
+from its original design at free of cost is called open source.
+
+6.What are IDE/tools availabe in market for java?
+Notepad
+Netbeans
+Eclipse
+JDeveloper(oracle)
+RAD(IBM)
+7.What are difference between JDK,JVM,JRE?
+JDK:
+---- 
+
+Java Development Kit.
+If we want to create any applications in java JDK have to be installed in our system.
+JDK versions: 1.0 to 1.14.
+
+JRE:
+----
+
+Java Runtime Environment.
+It is a pre-defined class files (i.e.) library files.
+
+JVM:
+----
+
+Java Virtual Machine.
+It is mainly used to allocate the memory and compiling.
+
+8.What is mean by oops?
+OOPS is Object Oriented Programming Structure.
+OOPS is a method of implementation in which programs are organised as collection of objects, class and methods.
+
+9.What are the coding Standard used in java?
+Pascal notation: Every word's first letter ,must be a capital letter
+Example:GreensTechnology
+Camel notation: First word's first letter should be a small letter, all the other suceeding word's first letter should be a capital letter. 
+Example:greensTechnology
+
+10.What is mean by class,method,object?
+Class:
+------
+  
+Class is a collection of objects and methods
+Class contains attributes(variables and methods) that are common to all the objects created in a class.
+Method:
+-------
+
+Method defines the set of action to be performed.
+
+Object:
+-------
+
+Object is the run time memory allocation.
+Using object we call any methods.
+
+11.What is mean by Encapsulation?
+It is the structure of creating folders.
+It wraps the data and code acting on data together in to a single unit.
+Example of encapsulation is POJO class.
+It is otherwise called Data hiding.
+
+12.What are the datatypes used in java?
+byte 
+short 
+int 
+long
+float
+double
+boolean 
+char 
+String
+
+13.What is byte size and range of int datatypes?
+Size of byte is 1 byte (8 bit)
+Range formula =[-2^(n-1)] to [(2^(n-1))-1] for int n=32
+
+14.What is mean by Wrapper class?
+Classes of data types is called wrapper class.
+It is used to convert any data type into an object.
+All classes and wrapper classes default value is null.
+
+15.What is the main use of Scanner class?
+To get the inputs from the user at the run time.
+
+16.What are the methods available in Scanner Class?
+nextByte();
+nextShort();
+nextInt();
+nextLong();
+   nextFloat();
+nextDouble();
+next().charAt(0);
+next();
+nextLine();
+nextBoolean();
+
+17.What is mean by inheritance?
+Accessing one class Properties in another class without multiple object creation.
+It avoids time and memory wastage.
+It ensures code reusability
+
+18.What are the ways to access the methods /data from another class?
+We can access the another class methods either by creating object or using extends keyword.
+ 
+19.What is mean by polymorphism?
+Poly-many.
+Morphism-forms.
+Taking more than one forms is called polymorphism or one task implemented in many ways.
+
+
+20.What are the difference between method overloading and overriding?
+
+
+Method overloading(static binding/compile time polymorphism):
+---------------------------------------------------------------------------
+When we have multiple methods with same method name but differs only based on its datatype,datatype count and order.
+
+Class-name
+Method-same
+Argument-differ based on datatype,order,number
+Method overriding(dynamic binding/run time polymorphism):
+-------------------------------------------------------------------------
+When you are not satisfied with the logic of your super class method,you can create the same method(with exact same
+method name) in your sub-class and you can write your required business logic.When you create object for sub-class,sub class 
+method only will get executed.so here child class method overriding parent class method.
+
+Class name-differ(using extends)
+Method-same
+Argument-same
+
+21.What are the types of inheritance?
+Single Inheritance
+Multilevel Inheritance
+Multiple Inheritance
+Hybrid Inheritance
+Hierarchical Inheritance
+
+22.Why multiple inheritance is not supported in java?
+Compilation error/syntax error-After extends keyword we can mention only one classname( , not allowed)
+Priority problem-When multiple parent classes has methods with same name and arguments,compiler will not know 
+which method should be called.
+
+23.What are the difference between Multiple and Multilevel inheritance?
+
+
+Multiple inheritance:
+-------------------------
+
+More than one parent class directly supporting into same child class.
+Multiple inheritance not supported in java due to Compilation problem and priority problem
+We have achieve multiple inheritance in java through interface.
+
+Multilevel inheritance:
+-----------------------
+
+More than one parent class supporting into one child class in tree level structure.
+It is supported in java
+
+24.What is mean by access specifier?
+It defines the scope or level of access for variables,methods and classes
+
+25.What are the difference between public and protected?
+ 
+
+    Public:
+-------
+
+It is global level access( same package + different package).
+Protected:
+------------
+
+can access Inside package ( object creation + extends )
+
+26.What is mean by Abstraction?
+Hiding the implementation part or business logic is called abstraction.
+
+27.What are the types of Abstraction?
+1. Partially abstraction(using abstract class).
+2. Fully abstraction(using interface).
+
+28.Can we create Object for Abstract class?
+No, we cant create object for abstract class.
+
+29.What is mean by Interface?
+
+It will support only abstract method(without business logic), won't support non abstract method(method with business logic)
+In interface "public abstract" is default.
+using "implements" keyword we can implement the interface in a class where we can write the business logic for all
+unimplemented methods.
+
+30.What are the difference between Abstract and Interface?
+
+
+Abstract class:
+-----------------
+
+Using Abstract class,we can acheive partial abstraction.
+It support both abstract method and non-abstract method.
+using "extends" keyword you can inherit an abstract class.
+For any abstract method we need to mention "public abstract".
+Interface:
+-----------
+
+Using interface,we can acheive full abstraction.
+It supports only abstract method.
+It is using "implements" keyword.
+"public Abstract" is default, no need to mention it explicitly.
